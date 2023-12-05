@@ -93,12 +93,12 @@ In [SQL Try Editor at W3Schools.com](https://www.w3schools.com/Sql/tryit.asp?fil
 
 ## [GET] /api/schemes
 
-[x] [1] gets all the schemes from db, including schemes _without_ steps (LEFT VS. INNER JOIN !!!) (17 ms)
-[x] [2] the schemes returned have a `scheme_id` key (6 ms)
-[x] [3] the schemes returned have a `scheme_name` key (5 ms)
-[x] [4] the schemes returned have a `number_of_steps` key (5 ms)
-[x] [5] the schemes arrive sorted by `scheme_id` ascending (6 ms)
-[x] [6] each scheme returned has the correct `number_of_steps` (5 ms)
+[ ] [1] gets all the schemes from db, including schemes _without_ steps (LEFT VS. INNER JOIN !!!) (17 ms)
+[ ] [2] the schemes returned have a `scheme_id` key (6 ms)
+[ ] [3] the schemes returned have a `scheme_name` key (5 ms)
+[ ] [4] the schemes returned have a `number_of_steps` key (5 ms)
+[ ] [5] the schemes arrive sorted by `scheme_id` ascending (6 ms)
+[ ] [6] each scheme returned has the correct `number_of_steps` (5 ms)
 
 ## [GET] /api/schemes/:scheme\*id
 
@@ -109,21 +109,21 @@ In [SQL Try Editor at W3Schools.com](https://www.w3schools.com/Sql/tryit.asp?fil
 [ ] [11] the scheme returned has the correct number of steps (5 ms)
 [ ] [12] each step inside the scheme returned has `step_id`, `step_number` and `instructions` keys (4 ms)
 [ ] [13] the steps inside the scheme returned are ordered by `step_number` ascending (8 ms)
-[ ] [14] responds with 404 and proper error on non-existing `scheme_id` (9 ms)
+[x] [14] responds with 404 and proper error on non-existing `scheme_id` (9 ms)
 
 ## [GET] /api/schemes/:scheme_id/steps
 
 [ ] [15] returns the correct number of steps for a `scheme_id` (10 ms)
 [ ] [16] the steps returned are ordered by `step_number` ascending (5 ms)
 [ ] [17] the steps returned have the proper `step_number`, `step_id`, `instructions` and `scheme_name` (4 ms)
-[ ] [18] responds with 404 and proper error on non-existing `scheme_id` (4 ms)
+[x] [18] responds with 404 and proper error on non-existing `scheme_id` (4 ms)
 
 ## [POST] /api/schemes
 
 [ ] [19] can create a new scheme in the database (13 ms)
 [ ] [20] responds with 201 status code (4 ms)
 [ ] [21] responds with the newly created scheme record (5 ms)
-[ ] [22] responds with 400 and proper message on missing or bad `scheme_name` (5 ms)
+[x] [22] responds with 400 and proper message on missing or bad `scheme_name` (5 ms)
 
 ## [POST] /api/schemes/:scheme_id/steps
 
@@ -131,5 +131,5 @@ In [SQL Try Editor at W3Schools.com](https://www.w3schools.com/Sql/tryit.asp?fil
 [ ] [24] responds with 201 status code (4 ms)
 [ ] [25] responds with the complete list of steps for the given `scheme_id` including the new one (5 ms)
 [ ] [26] responds with well formed steps ordered by `step_number` ascending (4 ms)
-[ ] [27] responds with 400 and proper message on missing or bad `step_number` or `instructions` (7 ms)
+[x] [27] responds with 400 and proper message on missing or bad `step_number` or `instructions` (7 ms)
 -->
