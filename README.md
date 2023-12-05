@@ -33,7 +33,7 @@ Write middleware functions in `api/schemes/scheme-middleware.js` following the i
 Write db access functions in `api/schemes/scheme-model.js` following the instructions inside that file:
 
 - [x] `find`
-- [ ] `findById`
+- [x] `findById`
 - [ ] `findSteps`
 - [ ] `add`
 - [ ] `addStep`
@@ -102,13 +102,13 @@ In [SQL Try Editor at W3Schools.com](https://www.w3schools.com/Sql/tryit.asp?fil
 
 ## [GET] /api/schemes/:scheme\*id
 
-[ ] [7] the scheme returned has the correct `scheme_id` \_number\* (10 ms)
-[ ] [8] the scheme returned has the correct `scheme_name` (5 ms)
-[ ] [9] the scheme returned has a `steps` property which is an array (5 ms)
-[ ] [10] the scheme returned has an empty `steps` array if the scheme has no steps (4 ms)
-[ ] [11] the scheme returned has the correct number of steps (5 ms)
-[ ] [12] each step inside the scheme returned has `step_id`, `step_number` and `instructions` keys (4 ms)
-[ ] [13] the steps inside the scheme returned are ordered by `step_number` ascending (8 ms)
+[x] [7] the scheme returned has the correct `scheme_id` \_number\* (10 ms)
+[x] [8] the scheme returned has the correct `scheme_name` (5 ms)
+[x] [9] the scheme returned has a `steps` property which is an array (5 ms)
+[x] [10] the scheme returned has an empty `steps` array if the scheme has no steps (4 ms)
+[x] [11] the scheme returned has the correct number of steps (5 ms)
+[x] [12] each step inside the scheme returned has `step_id`, `step_number` and `instructions` keys (4 ms)
+[x] [13] the steps inside the scheme returned are ordered by `step_number` ascending (8 ms)
 [x] [14] responds with 404 and proper error on non-existing `scheme_id` (9 ms)
 
 ## [GET] /api/schemes/:scheme_id/steps
