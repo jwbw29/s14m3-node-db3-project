@@ -188,8 +188,10 @@ function addStep(scheme_id, step) {
   return db("steps")
     .insert({ ...step, scheme_id })
     .then(() => {
-      return db("steps")
-        .where("scheme_id", scheme_id)
+      return db("steps as st")
+        .join("schemes as sc", "sc.scheme_id", "st.scheme_id")
+        .select("step_id", "step_number", "instructions", "scheme_name")
+        .where("sc.scheme_id", scheme_id)
         .orderBy("step_number", "asc");
     });
   // think about what you wanna see once you post something new to confirm it was added
