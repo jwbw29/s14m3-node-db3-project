@@ -93,12 +93,12 @@ In [SQL Try Editor at W3Schools.com](https://www.w3schools.com/Sql/tryit.asp?fil
 
 ## [GET] /api/schemes
 
-[ ] [1] gets all the schemes from db, including schemes _without_ steps (LEFT VS. INNER JOIN !!!) (17 ms)
-[ ] [2] the schemes returned have a `scheme_id` key (6 ms)
-[ ] [3] the schemes returned have a `scheme_name` key (5 ms)
-[ ] [4] the schemes returned have a `number_of_steps` key (5 ms)
-[ ] [5] the schemes arrive sorted by `scheme_id` ascending (6 ms)
-[ ] [6] each scheme returned has the correct `number_of_steps` (5 ms)
+[x] [1] gets all the schemes from db, including schemes _without_ steps (LEFT VS. INNER JOIN !!!) (17 ms)
+[x] [2] the schemes returned have a `scheme_id` key (6 ms)
+[x] [3] the schemes returned have a `scheme_name` key (5 ms)
+[x] [4] the schemes returned have a `number_of_steps` key (5 ms)
+[x] [5] the schemes arrive sorted by `scheme_id` ascending (6 ms)
+[x] [6] each scheme returned has the correct `number_of_steps` (5 ms)
 
 ## [GET] /api/schemes/:scheme\*id
 
