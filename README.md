@@ -35,7 +35,7 @@ Write db access functions in `api/schemes/scheme-model.js` following the instruc
 - [x] `find`
 - [x] `findById`
 - [x] `findSteps`
-- [ ] `add`
+- [x] `add`
 - [ ] `addStep`
 
 #### Schemes Schema
@@ -120,9 +120,9 @@ In [SQL Try Editor at W3Schools.com](https://www.w3schools.com/Sql/tryit.asp?fil
 
 ## [POST] /api/schemes
 
-[ ] [19] can create a new scheme in the database (13 ms)
-[ ] [20] responds with 201 status code (4 ms)
-[ ] [21] responds with the newly created scheme record (5 ms)
+[x] [19] can create a new scheme in the database (13 ms)
+[x] [20] responds with 201 status code (4 ms)
+[x] [21] responds with the newly created scheme record (5 ms)
 [x] [22] responds with 400 and proper message on missing or bad `scheme_name` (5 ms)
 
 ## [POST] /api/schemes/:scheme_id/steps
