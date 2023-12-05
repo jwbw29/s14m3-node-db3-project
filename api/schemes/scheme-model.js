@@ -181,8 +181,18 @@ function addStep(scheme_id, step) {
     and resolves to _all the steps_ belonging to the given `scheme_id`,
     including the newly created one.
 
-    
+    insert into steps (instructions, step_number, scheme_id)
+    values('foo', 5, 3)
   */
+
+  return db("steps")
+    .insert({ ...step, scheme_id })
+    .then(() => {
+      return db("steps")
+        .where("scheme_id", scheme_id)
+        .orderBy("step_number", "asc");
+    });
+  // think about what you wanna see once you post something new to confirm it was added
 }
 
 module.exports = {
