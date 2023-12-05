@@ -9,7 +9,7 @@ async function find() {
     .orderBy("sc.scheme_id", "asc");
 
   return rows;
-  // EXERCISE A
+  // [x] EXERCISE A
   /*
     1A- Study the SQL query below running it in SQLite Studio against `data/schemes.db3`.
     What happens if we change from a LEFT join to an INNER join?
@@ -29,7 +29,7 @@ async function find() {
 }
 
 function findById(scheme_id) {
-  // EXERCISE B
+  // [ ] EXERCISE B
   /*
     1B- Study the SQL query below running it in SQLite Studio against `data/schemes.db3`:
 
@@ -98,7 +98,7 @@ function findById(scheme_id) {
 }
 
 function findSteps(scheme_id) {
-  // EXERCISE C
+  // [ ] EXERCISE C
   /*
     1C- Build a query in Knex that returns the following data.
     The steps should be sorted by step_number, and the array
@@ -122,14 +122,14 @@ function findSteps(scheme_id) {
 }
 
 function add(scheme) {
-  // EXERCISE D
+  // [ ] EXERCISE D
   /*
     1D- This function creates a new scheme and resolves to _the newly created scheme_.
   */
 }
 
 function addStep(scheme_id, step) {
-  // EXERCISE E
+  // [ ] EXERCISE E
   /*
     1E- This function adds a step to the scheme with the given `scheme_id`
     and resolves to _all the steps_ belonging to the given `scheme_id`,
