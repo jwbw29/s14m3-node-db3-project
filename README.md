@@ -34,7 +34,7 @@ Write db access functions in `api/schemes/scheme-model.js` following the instruc
 
 - [x] `find`
 - [x] `findById`
-- [ ] `findSteps`
+- [x] `findSteps`
 - [ ] `add`
 - [ ] `addStep`
 
@@ -113,9 +113,9 @@ In [SQL Try Editor at W3Schools.com](https://www.w3schools.com/Sql/tryit.asp?fil
 
 ## [GET] /api/schemes/:scheme_id/steps
 
-[ ] [15] returns the correct number of steps for a `scheme_id` (10 ms)
-[ ] [16] the steps returned are ordered by `step_number` ascending (5 ms)
-[ ] [17] the steps returned have the proper `step_number`, `step_id`, `instructions` and `scheme_name` (4 ms)
+[x] [15] returns the correct number of steps for a `scheme_id` (10 ms)
+[x] [16] the steps returned are ordered by `step_number` ascending (5 ms)
+[x] [17] the steps returned have the proper `step_number`, `step_id`, `instructions` and `scheme_name` (4 ms)
 [x] [18] responds with 404 and proper error on non-existing `scheme_id` (4 ms)
 
 ## [POST] /api/schemes
